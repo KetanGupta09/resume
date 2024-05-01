@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="2style.css">
+    <title>contact</title>
+</head>
+<link rel="icon" type="image/x-icon" href="./favicon.ico"> <!-- Favicon -->
+<body>
+    <div class like><a href="index.html">back to the home</a></div>
+    <div class="container">
+        <!-- link in gmail -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h3>GET IN TOUCH</h3>
+
+            <input type="hidden" name="access_key" value="429b3a08-75fa-4400-8a5b-ce2dae1389bd">
+
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Email id" required>
+            <input type="text" id="phone" name="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="4" name="message" placeholder="how can we help you?" required></textarea>
+
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" data-captcha="true"></div>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- Required for hCaptcha -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
+</html>
